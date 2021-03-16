@@ -1,6 +1,5 @@
 # Teste_Git_1
- Primeiro teste com GIT.
+Estudo sobre GIT:
 
- -- Criação do Repositório.
- -- Alteração do README.
- -- Alterção do README no GITHUB.
+Informações parautilização do GIT e GitHub.
+Realizado por: Michael Douglas Bonfogo.
