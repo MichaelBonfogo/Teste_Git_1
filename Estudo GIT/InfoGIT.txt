@@ -1,0 +1,282 @@
+-- Git em 15 minutos
+https://try.github.io?
+
+-- Documentação github
+https://help.github.com/articles/git-...?
+
+-- Livro GIT
+https://git-scm.com/book/pt-br/v2
+
+-- curso youtube:
+https://www.youtube.com/watch?v=xEKo29OWILE&list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA
+https://www.youtube.com/watch?v=FF1f4bKYhoo&list=PLbEOwbQR9lqzK14I7OOeREEIE4k6rjgIj
+https://www.youtube.com/watch?v=OuOb1_qADBQ
+
+-- Links importantes:
+-- Como criar um README.MUD
+https://blog.rocketseat.com.br/como-fazer-um-bom-readme/#-logo-ou-banner
+https://gist.github.com/lohhans/f8da0b147550df3f96914d3797e9fb89
+https://dev.to/reginadiana/como-escrever-um-readme-md-sensacional-no-github-4509
+
+----------------------------------------------------------------
+----------------------------------------------------------------
+-- MEU GIT:
+
+https://github.com/MichaelBonfogo
+
+----------------------------------------------------------------
+----------------------------------------------------------------
+-- INSTALAR O GIT DESKTOP
+
+-- INSTALE O GIT
+$ git --version
+
+-- CONFIGURE A FERRAMENTA
+$ git config --global user.name "Michael Bonfogo"
+$ git config --global user.email "michaelbonfogo@gmail.com"
+$ git config --global core.editor 'code --wait'
+
+$ git config --list
+
+-- CRIE REPOSITÓRIOS
+Dentro da pasta do Projeto
+$ git init
+
+$ git clone [url]
+
+-- MANIPULAR ARQUIVOS
+$ git status
+
+$ git add [arquivo]
+$ git reset [arquivo]
+$ git diff
+$ git diff --staged
+$ git commit -m "[mensagem descritiva]"
+
+$ git branch
+$ git branch [nome-do-branch]
+$ git checkout [nome-do-branch]
+$ git merge [branch]
+$ git branch -d [nome-do-branch]
+
+$ git rm --cached [arquivo]
+$ git rm [arquivo]
+$ git mv [arquivo-original] [arquivo-renomeado]
+
+$ git stash
+$ git stash list
+$ git stash pop
+$ git stash drop
+
+$ git reset [commit]
+$ git reset --hard [commit]
+
+$ git pull
+
+-- Verificações
+$ git status
+$ git log
+$ git log --follow [arquivo]
+$ git diff [primerio-branch]...[segundo-branch]
+$ git show [commit]
+
+$ git fetch [marcador]
+$ git merge [marcador]/[branch]
+$ git push [alias] [branch]
+$ git pull
+
+---------------------------------------------------------------
+----------------------------------------------------------------
+-- Caderno Git:
+
+Git é um sistema de controle de versão distribuído open source que facilita ações com o GitHub em seu notebook ou
+desktop. Esta folha de dicas resume instruções comumente usadas via linha de comando do Git para referência
+rápida.
+----------------------------------------------------------------
+
+-- INSTALE O GIT
+GitHub fornece clientes desktop que incluem uma interface gráfica
+para as ações mais comuns em um repositório e atualiza automaticamente para a linha de comando do Git para cenários avançados.
+
+GitHub para Windows
+hps://windows.github.com
+
+GitHub para Mac
+hps://mac.github.com
+
+Distribuições do Git para Linux e sistemas POSIX são disponíveis no site oficial do Git SCM.
+Git para todas plataformas
+https://git-scm.com/
+
+$ git --version
+Apresenta a versão do git que está instalada
+
+----------------------------------------------------------------
+
+-- CONFIGURE A FERRAMENTA
+Configure informações de usuário para todos os repositórios locais
+
+$ git config --global user.name "[meu nome de usuário]"
+Configura o nome que você quer ligado as suas transações de commit
+
+$ git config --global user.email "[endereco-de-email]"
+Configura o email que você quer ligado as suas transações de commit
+
+$ git config --global color.ui auto
+Configura o email que você quer ligado as suas transações de commit
+
+$ git config --global core.editor 'code --wait'
+Configurando o Vs Code como editor padrão no Git
+
+-- Para verificar as configurações segue os comandos
+$ git config user.name
+Traz o nome do usuário
+
+$ git config user.email
+Traz o email
+
+$ git config --list
+Traz tudas as configurações
+----------------------------------------------------------------
+
+-- CRIE REPOSITÓRIOS
+Inicie um novo repositório ou obtenha de uma URL existente
+
+$ git init [nome-do-projeto]
+Cria um novo repositório local com um nome específico
+
+$ git clone [url]
+Baixa um projeto e seu histórico de versão inteiro
+
+----------------------------------------------------------------
+
+-- FAÇA MUDANÇAS
+Revise edições e crie uma transação de commit
+
+$ git status
+Lista todos os arquivos novos ou modificados para serem commitados
+
+$ git add [arquivo]
+Faz o snapshot de um arquivo na preparação para versionamento
+
+$ git reset [arquivo]
+Deseleciona o arquivo, mas preserva seu conteúdo
+
+$ git diff
+Mostra diferenças no arquivo que não foram realizadas
+
+$ git diff --staged
+Mostra a diferença entre arquivos selecionados e a suas últimas
+versões
+
+$ git commit -m "[mensagem descritiva]"
+Grava o snapshot permanentemente do arquivo no histórico de versão
+----------------------------------------------------------------
+
+-- MUDANÇAS EM GRUPO
+Nomeie uma série de commits e combine os esforços completos
+
+$ git branch
+Lista todos os branches locais no repositório atual
+
+$ git branch [nome-do-branch]
+Cria um novo branch
+
+$ git checkout [nome-do-branch]
+Muda para o branch específico e atualiza o diretório de trabalho
+
+$ git merge [branch]
+Combina o histórico do branch específico com o branch atual
+
+$ git branch -d [nome-do-branch]
+Exclui o branch específico
+----------------------------------------------------------------
+
+-- REFATORE NOMES DOS ARQUIVOS
+Mude e remova os arquivos versionados
+
+$ git rm --cached [arquivo]
+Remove o arquivo do controle de versão mas preserva o arquivo
+localmente
+
+$ git rm [arquivo]
+Remove o arquivo do diretório de trabalho e o seleciona para remoção
+
+$ git mv [arquivo-original] [arquivo-renomeado]
+Muda o nome do arquivo e o seleciona para o commit
+----------------------------------------------------------------
+
+-- SUPRIMA O RASTREAMENTO
+Exclua arquivos e diretórios temporários
+
+*.log
+build/
+temp-*
+
+Um arquivo de texto chamado `.gitignore` suprime o versionamento
+acidental de arquivos e diretórios correspondentes aos padrões
+específicados
+
+$ git ls-files --other --ignored --exclude-standard
+Lista todos os arquivos ignorados neste projeto
+----------------------------------------------------------------
+
+-- SALVE FRAGMENTOS
+Arquive e restaure mudanças incompletas
+
+$ git stash
+Armazena temporariamente todos os arquivos rastreados modificados
+
+$ git stash list
+Lista todos os conjuntos de alterações em stash
+
+$ git stash pop
+Restaura os arquivos recentes em stash
+
+$ git stash drop
+Descarta os conjuntos de alterações mais recentes em stash
+----------------------------------------------------------------
+
+-- REVISE HISTÓRICO
+Navegue e inspecione a evolução dos arquivos do projeto
+
+$ git log
+Lista o histórico de versões para o branch atual
+
+$ git log --follow [arquivo]
+Lista o histórico de versões para um arquivo, incluindo mudanças de nome
+
+$ git diff [primerio-branch]...[segundo-branch]
+Mostra a diferença de conteúdo entre dois branches
+
+$ git show [commit]
+Retorna mudanças de metadata e conteúdo para o commit especificado
+
+----------------------------------------------------------------
+
+-- DESFAÇA COMMITS
+Apague enganos e crie um histórico substituto
+
+$ git reset [commit]
+Desfaz todos os commits depois de `[commit]`, preservando mudanças locais
+
+$ git reset --hard [commit]
+Descarta todo histórico e mudanças para o commit especificado
+----------------------------------------------------------------
+
+-- SINCRONIZE MUDANÇAS
+Registre um marcador de repositório e troque o histórico de versão
+
+$ git fetch [marcador]
+Baixe todo o histórico de um marcador de repositório
+
+$ git merge [marcador]/[branch]
+Combina o marcador do branch no branch local
+
+$ git push [alias] [branch]
+Envia todos os commits do branch local para o GitHub
+
+$ git pull
+Baixa o histórico e incorpora as mudanças
+----------------------------------------------------------------
+----------------------------------------------------------------
