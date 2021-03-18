@@ -294,6 +294,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 -- Autor
 Status: Obrigatório
 
-Aqui entra seu jabá, interessante colocar seus contatos, redes sociais para as pessoas te encontrarem e começar um networking:
+Aqui é interessante colocar seus contatos, redes sociais para as pessoas te encontrarem e começar um networking:
 
 -------------------------------------------
