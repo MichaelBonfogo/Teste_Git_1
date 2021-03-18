@@ -3,5 +3,11 @@ Estudo sobre GIT:
 
 Informações para a utilização do GIT e GitHub.
 
+Tecnologias:
 
-Realizado por: Michael Douglas Bonfogo.
+txt
+
+git
+
+
+Autor: Michael Douglas Bonfogo.
